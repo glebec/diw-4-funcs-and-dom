@@ -68,6 +68,8 @@ f(3, 4) ---> 5
 
 ### JS Functions
 
+#### Function declarations
+
 ```
 "declare" the function:
   |
@@ -83,16 +85,27 @@ function hypotenuse (a, b) {
 }
 ```
 
+#### Arrow functions
+
+An alternative, more concise way to write functions from input to output.
+
+```js
+let yell = str => str + "!"
+let hypotenuse = (a, b) => Math.sqrt(a ** 2 + b ** 2);
+```
+
 #### Methods
+
+A special form of function which is accessed using a "dot" after the input: for example, `"hello".toUpperCase()` (instead of `toUpperCase("hello")`). Different data types (numbers, strings, objects, etc.) have different methods "attached" to them for you to access.
 
 - `f(i) -> o` "function"
 - `i.f() -> o` "method"
-- methods are functions which you call using a "dot" after the input, e.g. `"hello".toUpperCase()` (instead of `toUpperCase("hello")`).
-- They really are just a different way of writing functions, where part of the input is to the left of the dot.
-- They exist because of "Object Oriented Programming" (OOP) which we won't talk about today. It includes the keyword `this` which is often quite difficult to talk about.
-- One small advantage of methods is that code editors like VSCode can often suggest methods via autocomplete.
 
-Interesting example: how many inputs does the "slice" function have?
+They exist because of "Object Oriented Programming" (OOP) which we won't talk about today. OOP involves the keyword `this`, which is often quite difficult to talk about.
+
+One small advantage of methods is that code editors like VSCode can often suggest methods via autocomplete.
+
+An example: how many inputs does the "slice" function have?
 
 ```js
 // `slice` cuts up a string using start and stop indexes.
